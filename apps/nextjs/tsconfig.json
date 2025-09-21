@@ -1,0 +1,33 @@
+{
+  "extends": "@acme/tsconfig/base.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "dom", "dom.iterable"],
+    "jsx": "preserve",
+    "jsxImportSource": "nativewind",
+    "esModuleInterop": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/ui/*": ["./src/components/ui/*"],
+      "@/*": ["./src/*"],
+      "~/*": ["./src/*"],
+      "@acme/ui/*": ["../../packages/ui/src/*"],
+      "react-native": ["react-native-web"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "module": "esnext"
+  },
+  "include": [
+    ".storybook/**/*",
+    "*.ts",
+    "*.js",
+    "./src/**/*",
+    ".next/types/**/*.ts",
+    "../../packages/ui/src/**/*"
+  ],
+  "exclude": ["node_modules"]
+}

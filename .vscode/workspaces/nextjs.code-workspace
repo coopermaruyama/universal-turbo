@@ -1,0 +1,36 @@
+{
+  "folders": [
+    {
+      "path": "../../apps/nextjs"
+    },
+    {
+      "path": "../../packages/api"
+    },
+    {
+      "path": "../../packages/auth"
+    },
+    {
+      "path": "../../packages/db"
+    },
+    {
+      "path": "../../.vscode"
+    },
+    {
+      "path": "../../packages/ui"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "../../node_modules/typescript/lib",
+    "files.exclude": {
+      "**/.git": true,
+      "**/.cache": true,
+      "**/.expo": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "**/node_modules": true,
+      ".cache": true,
+      ".expo": true,
+      ".next": true
+    }
+  }
+}
